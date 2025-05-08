@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sun + Clouds + Fog -->
+  <div class="sun"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="fog"></div>
+
+  <!-- Weather UI Panel -->
+  <div class="dashboard-ui">
+    <h1>Weather Dashboard</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+    <div id="weatherResult">
+      <h2 id="cityName">🌍 City</h2>
+      <p id="temperature">🌡️ Temp: --°C</p>
+      <p id="description">🌥️ Description: --</p>
+      <p id="humidity">💧 Humidity: --%</p>
+      <p id="wind">💨 Wind: -- km/h</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
